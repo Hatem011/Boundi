@@ -1,0 +1,117 @@
+
+:root
+{
+    --dark-color:#19283f;
+}
+nav
+{
+    background-color: var(--dark-color);
+}
+
+.navbar-nav .nav-link {
+    
+    color: white;
+}
+nav .search
+{
+    border-left: 1px solid red;
+}
+.landing
+{
+   background-color: var(--dark-color);
+   height: 100vh;
+}
+.main-title::after
+{
+    content: "";
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    background-color: green;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.our-work ul li{
+    padding: .5rem 1rem;
+   cursor: pointer;
+   transition: .3s;
+}
+.our-work ul li.active{
+   border: 1px solid red;
+   background-color: red;
+   color: yellow;
+}
+.our-work ul li:not(.active):hover{
+color: red;
+}
+.item{
+    overflow: hidden;
+}
+.layer
+{
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -110%;
+    transition: left 1s;
+}
+.layer h2{
+    color: #fff;
+}
+.item:hover .layer{
+left: 0;
+}
+.team
+{
+    background-color: #ccc;
+}
+.team .box
+{
+    background-color: #fff;
+}
+.team .box h4{
+    background-color: rgb(62, 235, 62);
+    padding: .5rem;
+    color: #fff;
+}
+.team .box p{
+    padding: .5rem;
+}
+.projects
+{
+    background-color: #19283f;
+}
+.subscribe input{
+    border: none;
+    border-bottom:1px solid #fff ;
+}
+.subscribe input:focus
+{
+    outline: none;
+}
+.subscribe ::placeholder
+{
+    color: #fff;
+}
+.footer
+{
+    background-color: #19283f;
+}
+.footer .copyright > span
+{
+    color: green;
+}
+.footer .copyright div span{
+    color: yellow;
+}
+.footer .contact ul li a i{
+    width: 30px;
+    height: 30px;
+    background-color: #09c;
+    color: #fff;
+    transition: all .5s;
+}
+.footer .contact ul li a i:hover{
+    background-color: red;
+}
