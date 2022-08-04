@@ -10,7 +10,11 @@ nav
 
 .navbar-nav .nav-link {
     
-    color: white;
+    color: white !important;
+}
+.navbar-toggler
+{
+    background-color: #fff !important;
 }
 nav .search
 {
